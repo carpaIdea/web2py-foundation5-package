@@ -34,9 +34,9 @@ http://foundation.zurb.com/
 
   ```python
   # foundation5 theme for web2py  
-    from gluon import current  
-    current.auth = auth  
-    import foundation5 as zf5  
+  from gluon import current  
+  current.auth = auth  
+  import foundation5 as zf5  
   ```
 6. code your views by using the foundation5 framework guidelines
  (see more at http://foundation.zurb.com/docs/)
