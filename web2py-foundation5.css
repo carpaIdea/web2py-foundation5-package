@@ -122,7 +122,7 @@ ul.rc_container.has-comment {
 .rc_container + span.comment {
     display: inline-block;
     margin-bottom: 1.25rem; }
-li.rc-stacked input {
+li.rc-stacked input, .error li.rc-stacked input {
     margin-bottom: 0; }
 .zf5-form.form-inline .rc_container {
     padding-top:  0.625rem; }
