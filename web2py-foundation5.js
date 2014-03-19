@@ -163,7 +163,7 @@
     $('ul.f-dropdown').attr("data-dropdown-content", "");
     $('ul.w2p-orbit').attr("data-orbit", "");
     $.web2py.manage_errors = function (target) {
-      $('span.error', target).hide().slideDown('slow');
+      $('span.error', target).hide().slideDown('slow').css('display','block');
     };
 
     // resize and orientation change events
