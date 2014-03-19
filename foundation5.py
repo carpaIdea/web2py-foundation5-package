@@ -223,15 +223,15 @@ def navbar(additional_items=None, dropdown_class='dropdown',
     li_divider = LI(_class='divider')
     # not auth items (add your own)
     ## below some examples
-    ico0 = "fi-info"
-    txt0 = current.T('About')
-    href0 = URL(current.request.controller, 'about')
-    li_about = LI(A(I(_class=ico0), ' ', txt0, _href=href0, _rel="nofollow"))
+    # ico0 = "fi-info"
+    # txt0 = current.T('About')
+    # href0 = URL(current.request.controller, 'about')
+    # li_about = LI(A(I(_class=ico0), ' ', txt0, _href=href0, _rel="nofollow"))
     ## ----------------
-    ico1 = "fi-book"
-    txt1 = current.T('Help')
-    href1 = URL(current.request.controller, 'help')
-    li_help = LI(A(I(_class=ico1), ' ', txt1, _href=href1, _rel="nofollow"))
+    # ico1 = "fi-book"
+    # txt1 = current.T('Help')
+    # href1 = URL(current.request.controller, 'help')
+    # li_help = LI(A(I(_class=ico1), ' ', txt1, _href=href1, _rel="nofollow"))
     ## items added dynamically
     dynamic_items = []
     if additional_items and isinstance(additional_items, list):
@@ -304,9 +304,9 @@ def navbar(additional_items=None, dropdown_class='dropdown',
           li_divider,
           li_login,
           li_logout,
-          li_divider,
-          li_about,
-          li_help
+          # li_divider,
+          # li_about,
+          # li_help
           ]
     if dynamic_items:
         for di in dynamic_items:
