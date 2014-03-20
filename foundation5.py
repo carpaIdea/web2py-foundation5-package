@@ -289,12 +289,11 @@ def navbar(additional_items=None, dropdown_class='dropdown',
             res = LI(A(I(_class=ico), ' ', txt, _href=v, _rel="nofollow"))
             li_change_password = res
     # dropdown toggle
-    tc = "has-dropdown %s" % (toggle_class) if toggle_class else "has-dropdown"
+    tc = "%s" % (toggle_class) if toggle_class else None
     toggle = A(toggletext,
                _href="#",
                _class=tc,
-               _rel="nofollow",
-               data=dict(dropdown="w2p-auth-bar"))
+               _rel="nofollow")
     # set the order of items in the drop-down and add dividers
     ul = [li_register,
           li_profile,
